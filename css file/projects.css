@@ -1,0 +1,205 @@
+/* General Styling for Projects Section */
+#projects .projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 15px;
+  }
+  
+  #projects .projects-header h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+	font-size: 3rem;
+	text-transform: uppercase;
+  }
+    #projects h1 span
+    {
+        color: crimson;
+    }
+  #projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: 18px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  #projects .project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #projects .project-info {
+    padding: 25px;
+    height: 40vh;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #1c2833 0%, #566573 100%);
+    color: white;
+  }
+  
+  #projects .project-info h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  #projects .project-info h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+  
+  #projects .project-info p {
+    font-size: 0.95rem;
+    margin-top: 8px;
+    color: white;
+  }
+  
+  #projects .project-info a {
+    display: inline-block;
+    padding: 8px 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid crimson;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin-top: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #projects .project-info a:hover {
+    color: white;
+    background-color: crimson;
+  }
+  
+  #projects .project-img {
+    flex: 1;
+    height: 40vh;
+    /* height: 280px; */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #projects .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #1c2833 0%, #566573 100%);
+    opacity: 0.6;
+  }
+  
+  #projects .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  #projects .project-item:hover .project-img img {
+    transform: scale(1.08);
+  }
+  
+  /* Responsive Design */
+  
+  /* Large screens (min-width: 1200px) */
+  @media screen and (min-width: 1200px) {
+    #projects .project-item {
+      flex-direction: row;
+    }
+  
+    #projects .project-info {
+      padding: 35px;
+    }
+  
+    #projects .project-info h1 {
+      font-size: 2.8rem;
+    }
+  
+    #projects .project-info h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Medium screens (max-width: 960px) */
+  @media screen and (max-width: 960px) {
+    #projects .project-item {
+      flex-direction: column-reverse;
+      width: 92%;
+    }
+  
+    #projects .project-info {
+        width: 100%;
+      text-align: center;
+      align-items: center;
+      padding: 22px;
+    }
+  
+    #projects .project-info h1 {
+      font-size: 2rem;
+    }
+  
+    #projects .project-info h2 {
+      font-size: 1.3rem;
+    }
+  
+    #projects .project-img {
+      height: 240px;
+    }
+  }
+  
+  /* Small screens (max-width: 600px) */
+  @media screen and (max-width: 600px) {
+    #projects {
+      padding: 50px 10px;
+    }
+  
+    #projects .projects-header h1 {
+      font-size: 1.7rem;
+    }
+  
+    #projects .project-item {
+      width: 100%;
+      margin: 8px 0;
+    }
+  
+    #projects .project-info {
+      padding: 18px;
+    }
+  
+    #projects .project-info h1 {
+      font-size: 1.5rem;
+    }
+  
+    #projects .project-info h2 {
+      font-size: 1.1rem;
+    }
+  
+    #projects .project-img {
+      height: 200px;
+    }
+  }
+  

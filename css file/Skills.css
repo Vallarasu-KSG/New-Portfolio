@@ -1,0 +1,73 @@
+
+.skills-container h1
+{
+    text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: black;
+}
+.skills-container h1 span
+{
+	color: crimson;
+}
+
+.skills-container
+{
+    padding: 50px 0;
+    width: 100%;
+}
+@media screen and (max-width:860px)
+{
+    .skills-container
+    {
+        height: auto;
+        /* padding: 250px 0; */
+        width: 100%;
+    }   
+}
+@media screen and (max-width:500px)
+{
+    .skills-container
+    {
+        width: 100%;
+    }   
+}
+.skills-container h2
+{
+    padding: 20px 0;
+    text-align: center;
+}
+#skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 20px 5%;
+    gap: 10px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Center text vertically */
+    transition: width 0.4s ease;
+}
+
+.html { background-color: #e44d26; width: 90%; }
+.css { background-color: #264de4; width: 85%; }
+.bs { background-color: #102166; width: 50%; }
+.js { background-color: #f7df1e; width: 75%; color: black; }
+.react { background-color: #61dafb; width: 70%; }
+.nejs { background-color: rgb(12, 223, 12); width: 70%; }
+.mdb { background-color: rgb(3, 73, 3); width: 70%; }
+.cp { background-color: rgb(100, 100, 197); width: 70%; }
+.py { background: linear-gradient(Blue , yellow ); width: 75%; }

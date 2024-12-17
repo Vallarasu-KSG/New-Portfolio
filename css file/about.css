@@ -1,0 +1,123 @@
+.about-header h1 {
+    text-align: left;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.about-header h1 span {
+    color: crimson;
+}
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10% 4vh;
+    height: 60vh;
+    gap: 10px;
+    /* flex-wrap: wrap; Ensures elements wrap on smaller screens */
+}
+
+.col-left {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 50vh;
+}
+
+.col-left img {
+    background-color: rgba(255, 0, 0, 0.26);
+    /* border: 1px solid red; */
+    max-width: 100%;
+    height: auto; /* Ensures images are responsive */
+}
+
+.col-right {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    width: 75%;
+    height: 50vh;
+    gap: 20px;
+
+}
+
+.col-right h2 {
+    font-size: 2rem;
+}
+
+.col-right p {
+    font-size: 1.4rem;
+}
+
+.col-right .resume-btn {
+    text-decoration: none;
+    background-color: crimson;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.col-right .resume-btn:hover {
+    background-color: rgb(212, 80, 106);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about_container {
+        margin: 0 5%;
+        flex-direction: column; /* Stack columns vertically */
+        height: auto;
+    }
+
+    .col-left,
+    .col-right {
+        width: 100%; /* Take full width on small screens */
+        height: auto;
+    }
+
+    .col-right {
+        align-items: center;
+        text-align: center; /* Center align text */
+    }
+
+    .col-right h2 {
+        font-size: 1.8rem;
+    }
+
+    .col-right p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .col-right .resume-btn {
+        font-size: 1.6rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .col-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .col-right p {
+        font-size: 1rem;
+    }
+
+    .col-right .resume-btn {
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+}
